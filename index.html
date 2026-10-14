@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!-- Cliente: Terrup (slug terrup) — generato da templates/02-corporate -->
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>Terrup — Consulenza informatica e matrimoniale a Roma</title>
+<meta name="description" content="Terrup, studio di Roma attivo dal 2000: consulenza informatica e consulenza matrimoniale con un approccio diretto e concreto. Contattaci per un primo confronto.">
+<link rel="canonical" href="https://www.terrup.it/index.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Terrup">
+<meta property="og:title" content="Terrup — Consulenza informatica e matrimoniale a Roma">
+<meta property="og:description" content="Terrup, studio di Roma attivo dal 2000: consulenza informatica e consulenza matrimoniale con un approccio diretto e concreto. Contattaci per un primo confronto.">
+<meta property="og:url" content="https://www.terrup.it/index.html">
+<meta property="og:locale" content="it_IT">
+<meta property="og:image" content="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1200&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Terrup — Consulenza informatica e matrimoniale a Roma">
+<meta name="twitter:description" content="Terrup, studio di Roma attivo dal 2000: consulenza informatica e consulenza matrimoniale con un approccio diretto e concreto. Contattaci per un primo confronto.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "Terrup",
+  "url": "https://www.terrup.it/index.html",
+  "email": "alma.artartart@gmail.com",
+  "telephone": "+392223344567",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via delle Vie",
+    "postalCode": "00031",
+    "addressLocality": "Roma",
+    "addressCountry": "IT"
+  }
+}
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; }
+  .bg-primary { background-color: #0f766e; }
+  .text-primary { color: #0f766e; }
+  .border-primary { border-color: #0f766e; }
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(22px);} to { opacity: 1; transform: translateY(0);} }
+  .fade-in-up { opacity: 0; animation: fadeInUp .9s ease forwards; }
+  .delay-1 { animation-delay: .12s; } .delay-2 { animation-delay: .26s; } .delay-3 { animation-delay: .4s; }
+  [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity .8s cubic-bezier(.22,.61,.36,1), transform .8s cubic-bezier(.22,.61,.36,1); }
+  [data-reveal].in-view { opacity: 1; transform: translateY(0); }
+  .glow-wrap { position: relative; }
+  .glow-wrap::before { content: ""; position: absolute; inset: -18px; background: radial-gradient(closest-side, rgba(15,118,110,.2), transparent); filter: blur(12px); z-index: -1; border-radius: 1.5rem; }
+  .img-shadow { box-shadow: 0 40px 80px -25px rgba(15,23,42,.4), 0 15px 30px -15px rgba(15,23,42,.25); }
+  .card-lift { transition: transform .3s ease, box-shadow .3s ease; }
+  .card-lift:hover { transform: translateY(-6px); box-shadow: 0 30px 60px -25px rgba(15,23,42,.25); }
+  .btn-lift { transition: transform .25s ease, box-shadow .25s ease; }
+  .btn-lift:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -10px rgba(15,118,110,.5); }
+  .bg-dots { background-image: radial-gradient(#0f766e 1px, transparent 1px); background-size: 24px 24px; }
+  .hover\:text-primary:hover { color: #0f766e; }
+
+  /* hero slider a piena pagina */
+  .hero-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.6s ease; }
+  .hero-slide.active { opacity: 1; }
+  .hero-dot { width: 9px; height: 9px; border-radius: 9999px; background: rgba(255,255,255,.5); transition: background .3s ease, transform .3s ease; }
+  .hero-dot.active { background: #fff; transform: scale(1.3); }
+
+  /* header trasparente sopra la hero, solido allo scroll */
+  #site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 30; background: transparent; transition: background-color .35s ease, box-shadow .35s ease; }
+  #site-header a, #site-header .brand-text { color: #fff; transition: color .35s ease; }
+  #site-header .logo-badge { background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.4); color: #fff; transition: background-color .35s ease, color .35s ease, border-color .35s ease; }
+  #site-header .cta-btn { border: 1px solid #fff; color: #fff; background: transparent; transition: background-color .35s ease, color .35s ease; }
+  #site-header .menu-btn { color: #fff; transition: color .35s ease; }
+  #site-header.solid { background: rgba(255,255,255,.92); backdrop-filter: blur(10px); box-shadow: 0 1px 0 rgba(15,23,42,.04), 0 12px 30px -18px rgba(15,23,42,.2); }
+  #site-header.solid a, #site-header.solid .brand-text { color: #0f766e; }
+  #site-header.solid .logo-badge { background: #0f766e; border-color: #0f766e; color: #fff; }
+  #site-header.solid .cta-btn { background: #0f766e; border-color: #0f766e; color: #fff; }
+  #site-header.solid .menu-btn { color: #0f766e; }
+</style>
+</head>
+<body class="bg-white text-neutral-800">
+
+  <header id="site-header">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-5">
+      <a href="index.html" class="flex items-center gap-2">
+        <div class="logo-badge w-9 h-9 rounded flex items-center justify-center font-bold text-sm">T</div>
+        <span class="brand-text font-bold text-lg">Terrup</span>
+      </a>
+      <nav class="hidden md:flex gap-7 text-sm font-medium">
+        <a href="index.html" class="font-semibold border-b border-current pb-1">Home</a>
+        <a href="studio.html" class="hover:opacity-70">Lo studio</a>
+        <a href="professionisti.html" class="hover:opacity-70">Professionisti</a>
+        <a href="servizi.html" class="hover:opacity-70">Servizi</a>
+        <a href="contatti.html" class="hover:opacity-70">Contatti</a>
+      </nav>
+      <a href="contatti.html" class="cta-btn hidden md:inline-block text-sm font-semibold rounded px-5 py-2.5">Richiedi una consulenza</a>
+      <button id="menu-btn" class="menu-btn md:hidden w-10 h-10 flex items-center justify-center" aria-label="Apri menu" aria-expanded="false">
+        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-white">
+    <div class="flex items-center justify-between px-6 py-5 border-b border-neutral-100">
+      <span class="text-lg font-semibold text-neutral-900">Menu</span>
+      <button id="menu-close" class="w-10 h-10 flex items-center justify-center text-neutral-800" aria-label="Chiudi menu">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"></line><line x1="19" y1="5" x2="5" y2="19"></line></svg>
+      </button>
+    </div>
+    <nav class="flex flex-col px-6 py-6 gap-1 text-lg">
+      <a href="index.html" class="py-3 border-b border-neutral-100 text-neutral-800 font-medium">Home</a>
+      <a href="studio.html" class="py-3 border-b border-neutral-100 text-neutral-800 font-medium">Lo studio</a>
+      <a href="professionisti.html" class="py-3 border-b border-neutral-100 text-neutral-800 font-medium">Professionisti</a>
+      <a href="servizi.html" class="py-3 border-b border-neutral-100 text-neutral-800 font-medium">Servizi</a>
+      <a href="contatti.html" class="py-3 text-neutral-800 font-medium">Contatti</a>
+    </nav>
+    <div class="px-6">
+      <a href="contatti.html" class="block text-center bg-primary text-white rounded px-5 py-3 font-medium">Richiedi una consulenza</a>
+    </div>
+  </div>
+
+  <section class="relative h-screen min-h-[600px] w-full overflow-hidden" data-slider>
+    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1800&auto=format&fit=crop" alt="Persone al lavoro in un ufficio open space (foto di repertorio)" class="hero-slide active">
+    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=1800&auto=format&fit=crop" alt="Strada tra i grattacieli di una città (foto di repertorio)" class="hero-slide">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1800&auto=format&fit=crop" alt="Team al lavoro attorno a un tavolo (foto di repertorio)" class="hero-slide">
+    <div class="absolute inset-0 bg-gradient-to-t from-[#094944]/85 via-[#0f766e]/35 to-[#094944]/20"></div>
+    <div class="relative z-10 h-full flex flex-col justify-end max-w-6xl mx-auto px-6 pb-28 text-white">
+      <p class="fade-in-up uppercase text-sm font-semibold tracking-widest mb-4 text-white/90">Prova delle prove</p>
+      <h1 class="fade-in-up delay-1 text-4xl md:text-6xl font-bold leading-tight mb-6 max-w-2xl">
+        Vediamo se ce la facciamo
+      </h1>
+      <p class="fade-in-up delay-2 text-lg text-white/85 max-w-xl mb-8">
+        Test splendido.
+      </p>
+      <div class="fade-in-up delay-3 flex flex-wrap gap-4">
+        <a href="contatti.html" class="btn-lift bg-white text-primary font-semibold rounded px-6 py-3 shadow-lg">Contattaci</a>
+        <a href="servizi.html" class="border border-white text-white font-semibold rounded px-6 py-3 hover:bg-white hover:text-primary transition">Scopri i servizi</a>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+      <button class="hero-dot active" data-dot aria-label="Foto 1"></button>
+      <button class="hero-dot" data-dot aria-label="Foto 2"></button>
+      <button class="hero-dot" data-dot aria-label="Foto 3"></button>
+    </div>
+  </section>
+
+  <section class="border-y border-neutral-100 bg-neutral-50/70">
+    <div class="max-w-6xl mx-auto px-6 py-6">
+      <p class="text-center text-xs font-semibold uppercase tracking-wide text-neutral-400 mb-5">Aziende che si affidano a noi</p>
+      <p class="text-center text-base md:text-lg font-medium text-neutral-600 max-w-xl mx-auto">Privati, professionisti e piccole realtà che cercano un consulente diretto e concreto.</p>
+    </div>
+  </section>
+
+  <section class="bg-gradient-to-r from-[#0b554f] via-[#0f766e] to-[#0f766e] text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-dots opacity-[.08] text-white"></div>
+    <div class="max-w-3xl mx-auto px-6 py-10 grid grid-cols-2 gap-6 text-center relative">
+      <div><div class="text-3xl font-bold"><span data-counter="26">0</span></div><div class="text-sm text-white/70">Anni di attività</div></div>
+      <div><div class="text-3xl font-bold"><span data-counter="2">0</span></div><div class="text-sm text-white/70">Aree di consulenza</div></div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-6 py-24">
+    <h2 data-reveal class="text-3xl font-bold text-center mb-4">I nostri servizi</h2>
+    <p data-reveal class="text-neutral-600 text-center max-w-2xl mx-auto mb-14">Due aree di consulenza, un unico approccio: diretto e concreto.</p>
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div data-reveal class="card-lift border border-neutral-200 border-t-4 border-t-primary rounded-lg p-8 transition-colors duration-300 hover:bg-teal-50/40">
+        <div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-5">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"></rect><line x1="8" y1="20" x2="16" y2="20"></line><line x1="12" y1="16" x2="12" y2="20"></line></svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Consulenza informatica</h3>
+        <p class="text-neutral-600 text-sm leading-relaxed">Supporto concreto su strumenti, sistemi e scelte informatiche, con indicazioni chiare e operative.</p>
+      </div>
+      <div data-reveal class="card-lift border border-neutral-200 border-t-4 border-t-primary rounded-lg p-8 transition-colors duration-300 hover:bg-teal-50/40">
+        <div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-5">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"></circle><circle cx="16" cy="8" r="3"></circle><path d="M2 20c0-3 2.7-5 6-5 1.5 0 2.9.4 4 1.2 1.1-.8 2.5-1.2 4-1.2 3.3 0 6 2 6 5"></path></svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Consulenza matrimoniale</h3>
+        <p class="text-neutral-600 text-sm leading-relaxed">Un ascolto attento e un confronto diretto per affrontare insieme le questioni di coppia.</p>
+      </div>
+    </div>
+    <div data-reveal class="text-center mt-12">
+      <a href="servizi.html" class="text-sm font-semibold text-primary hover:underline">Vedi tutti i servizi →</a>
+    </div>
+  </section>
+
+  <section class="bg-gradient-to-b from-teal-50/50 to-white border-y border-neutral-100">
+    <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+      <div data-reveal class="glow-wrap">
+        <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?q=80&w=900&auto=format&fit=crop" alt="Sala riunioni (foto di repertorio)" class="img-shadow w-full h-[340px] object-cover rounded-lg">
+      </div>
+      <div data-reveal>
+        <h2 class="text-3xl font-bold mb-5">Dal 2000, un unico interlocutore</h2>
+        <p class="text-neutral-600 leading-relaxed mb-4">
+          Terrup è attivo a Roma dal 2000. Affianchiamo chi si rivolge a noi con consulenze
+          informatiche e matrimoniali, parlando chiaro e puntando a soluzioni pratiche.
+        </p>
+        <a href="studio.html" class="text-sm font-semibold text-primary hover:underline">Scopri lo studio →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-6 py-24 relative">
+    <h2 data-reveal class="text-3xl font-bold text-center mb-14">Cosa dicono i nostri clienti</h2>
+    <div class="max-w-2xl mx-auto">
+      <div data-reveal class="card-lift bg-white border border-neutral-200 rounded-lg p-8 relative">
+        <svg class="w-10 h-10 text-primary/15 absolute top-6 right-6" viewBox="0 0 24 24" fill="currentColor"><path d="M7 7c-2.5 0-4.5 2-4.5 4.5S4.5 16 7 16c.3 0 .6 0 .8-.1C7.3 17.8 5.8 19 4 19v2c3.3 0 6-2.7 6-6v-3.5C10 9.5 8.5 7 7 7zm10 0c-2.5 0-4.5 2-4.5 4.5S14.5 16 17 16c.3 0 .6 0 .8-.1-.5 1.9-2 3.1-3.8 3.1v2c3.3 0 6-2.7 6-6v-3.5C20 9.5 18.5 7 17 7z"/></svg>
+        <p class="text-neutral-600 italic mb-5">"Bravissimi tutti!"</p>
+        <p class="font-semibold text-sm">Almona — Sviluppatore</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gradient-to-br from-[#0f766e] via-[#0f766e] to-[#0b554f] text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-dots opacity-[.08] text-white"></div>
+    <div class="max-w-6xl mx-auto px-6 py-16 text-center relative">
+      <h2 data-reveal class="text-3xl font-bold mb-4">Parliamo di cosa ti serve</h2>
+      <p data-reveal class="text-white/80 mb-8">Scrivici o chiamaci per un primo confronto.</p>
+      <a href="contatti.html" class="btn-lift inline-block bg-white text-primary font-semibold rounded px-8 py-3 shadow-xl">Richiedi una consulenza</a>
+    </div>
+  </section>
+
+  <footer class="bg-neutral-900 text-neutral-400 text-sm">
+    <div class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="text-white font-bold text-lg mb-2">Terrup</div>
+        <p>Via delle Vie, 00031 Roma — P.IVA 12345678987</p>
+        <p>Iscritto all'Albo dottori in informatica magistrale</p>
+      </div>
+      <div>
+        <div class="text-white font-semibold mb-2">Contatti</div>
+        <p>alma.artartart@gmail.com</p>
+        <p>PEC: [da fornire]</p>
+        <p>2223344567</p>
+      </div>
+      <div>
+        <div class="text-white font-semibold mb-2">Menu</div>
+        <p><a href="studio.html" class="hover:text-white">Lo studio</a></p>
+        <p><a href="professionisti.html" class="hover:text-white">Professionisti</a></p>
+        <p><a href="servizi.html" class="hover:text-white">Servizi</a></p>
+      </div>
+      <div>
+        <div class="text-white font-semibold mb-2">Orari</div>
+        <p>[da fornire]</p>
+      </div>
+    </div>
+    <div class="border-t border-neutral-800 text-center py-4 text-xs">© 2026 Terrup. Tutti i diritti riservati. &middot; <a href="privacy-policy.html" class="hover:text-white">Privacy Policy</a> &middot; <a href="cookie-policy.html" class="hover:text-white">Cookie Policy</a></div>
+  </footer>
+
+  <script>
+    const siteHeader = document.getElementById('site-header');
+    const heroHeight = () => window.innerHeight * 0.85;
+    window.addEventListener('scroll', () => siteHeader.classList.toggle('solid', window.scrollY > heroHeight()));
+
+    const revealEls = document.querySelectorAll('[data-reveal]');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('in-view'); revealObs.unobserve(entry.target); }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach((el) => revealObs.observe(el));
+
+    const counters = document.querySelectorAll('[data-counter]');
+    const counterObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.dataset.counter, 10);
+          const step = Math.max(1, Math.round(target / 40));
+          let current = 0;
+          const tick = () => {
+            current = Math.min(target, current + step);
+            el.textContent = current;
+            if (current < target) requestAnimationFrame(tick);
+          };
+          tick();
+          counterObs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.4 });
+    counters.forEach((c) => counterObs.observe(c));
+
+    document.querySelectorAll('[data-slider]').forEach((slider) => {
+      const slides = Array.from(slider.querySelectorAll('.hero-slide'));
+      const dots = Array.from(slider.querySelectorAll('[data-dot]'));
+      let current = 0;
+      const show = (n) => {
+        slides[current].classList.remove('active');
+        dots[current] && dots[current].classList.remove('active');
+        current = n;
+        slides[current].classList.add('active');
+        dots[current] && dots[current].classList.add('active');
+      };
+      dots.forEach((dot, n) => dot.addEventListener('click', () => show(n)));
+      setInterval(() => show((current + 1) % slides.length), 5000);
+    });
+
+    const menuBtn = document.getElementById('menu-btn');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const openMenu = () => { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; menuBtn.setAttribute('aria-expanded', 'true'); };
+      const closeMenu = () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; menuBtn.setAttribute('aria-expanded', 'false'); };
+      menuBtn.addEventListener('click', openMenu);
+      if (menuClose) menuClose.addEventListener('click', closeMenu);
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMenu));
+    }
+  </script>
+
+
+  <!-- Cookie banner: personalizza testo/categorie in base a privacy_cookie del brief cliente
+       (briefs/_schema.md). Google Analytics e gli strumenti di marketing/remarketing sono
+       componenti aggiuntivi venduti a parte, non raccolti nel brief: lascia le categorie
+       "Statistiche"/"Marketing" come placeholder generici, senza attivare script reali, oppure
+       semplifica il banner a un avviso informativo se il sito ha solo cookie tecnici + mappa
+       Google Maps. -->
+  <style>
+    .cookie-banner { position: fixed; left: 0; right: 0; bottom: 0; z-index: 999; background: #fff; border-top: 1px solid rgba(15,23,42,.08); box-shadow: 0 -10px 30px -14px rgba(15,23,42,.2); padding: 18px 20px; }
+    .cookie-banner[hidden] { display: none; }
+    .cookie-banner-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+    .cookie-banner-text { flex: 1 1 420px; font-size: .86rem; line-height: 1.55; color: #333; margin: 0; }
+    .cookie-banner-text a { color: #0f766e; text-decoration: underline; }
+    .cookie-banner-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cookie-btn { font-size: .84rem; font-weight: 600; padding: .6rem 1.15rem; border-radius: 6px; cursor: pointer; border: 1px solid transparent; transition: opacity .2s ease; }
+    .cookie-btn:hover { opacity: .85; }
+    .cookie-btn-solid { background: #0f766e; color: #fff; }
+    .cookie-btn-outline { background: #fff; color: #333; border-color: #d4d4d8; }
+    .cookie-btn-ghost { background: transparent; color: #0f766e; border-color: transparent; text-decoration: underline; padding-left: .2rem; padding-right: .2rem; }
+    .cookie-prefs { max-width: 1100px; margin: 14px auto 0; border-top: 1px solid rgba(15,23,42,.08); padding-top: 14px; }
+    .cookie-prefs[hidden] { display: none; }
+    .cookie-pref-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 0; }
+    .cookie-pref-row .cookie-pref-info { display: flex; flex-direction: column; gap: 2px; }
+    .cookie-pref-row strong { font-size: .86rem; color: #111; }
+    .cookie-pref-row span { font-size: .78rem; color: #666; }
+    .cookie-toggle { position: relative; display: inline-block; width: 42px; height: 24px; flex: 0 0 auto; }
+    .cookie-toggle input { opacity: 0; width: 0; height: 0; }
+    .cookie-toggle-track { position: absolute; inset: 0; background: #d4d4d8; border-radius: 999px; transition: background .2s ease; }
+    .cookie-toggle-track::before { content: ''; position: absolute; width: 18px; height: 18px; left: 3px; top: 3px; background: #fff; border-radius: 50%; transition: transform .2s ease; }
+    .cookie-toggle input:checked + .cookie-toggle-track { background: #0f766e; }
+    .cookie-toggle input:checked + .cookie-toggle-track::before { transform: translateX(18px); }
+    .cookie-toggle-disabled { opacity: .55; }
+    .cookie-reopen { position: fixed; left: 18px; bottom: 18px; z-index: 998; background: #fff; border: 1px solid rgba(15,23,42,.12); border-radius: 6px; padding: .55rem 1rem; font-size: .78rem; font-weight: 600; color: #333; box-shadow: 0 6px 18px -8px rgba(15,23,42,.25); cursor: pointer; }
+    .cookie-reopen[hidden] { display: none; }
+    @media (max-width: 640px) { .cookie-banner-actions { width: 100%; } .cookie-btn { flex: 1 1 auto; text-align: center; } }
+  </style>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Preferenze cookie" hidden>
+    <div class="cookie-banner-inner">
+      <p class="cookie-banner-text">
+        Usiamo cookie tecnici necessari al funzionamento del sito. Con il tuo consenso, usiamo anche cookie di analisi statistica e, se attivi, strumenti di marketing. Puoi cambiare idea in ogni momento dal pulsante &ldquo;Cookie&rdquo; in basso. <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="cookie-policy.html">Cookie Policy</a>
+      </p>
+      <div class="cookie-banner-actions">
+        <button type="button" class="cookie-btn cookie-btn-ghost" data-cookie-action="preferences">Personalizza</button>
+        <button type="button" class="cookie-btn cookie-btn-outline" data-cookie-action="reject">Rifiuta</button>
+        <button type="button" class="cookie-btn cookie-btn-solid" data-cookie-action="accept">Accetta tutti</button>
+      </div>
+    </div>
+    <div class="cookie-prefs" id="cookie-prefs" hidden>
+      <div class="cookie-pref-row">
+        <div class="cookie-pref-info"><strong>Necessari</strong><span>Indispensabili per il funzionamento del sito. Sempre attivi.</span></div>
+        <label class="cookie-toggle cookie-toggle-disabled"><input type="checkbox" checked disabled><span class="cookie-toggle-track"></span></label>
+      </div>
+      <div class="cookie-pref-row">
+        <div class="cookie-pref-info"><strong>Statistiche</strong><span>Ci aiutano a capire come viene usato il sito, in forma aggregata.</span></div>
+        <label class="cookie-toggle"><input type="checkbox" id="cookie-pref-analytics"><span class="cookie-toggle-track"></span></label>
+      </div>
+      <div class="cookie-pref-row">
+        <div class="cookie-pref-info"><strong>Marketing</strong><span>Usati per mostrare comunicazioni e contenuti pertinenti.</span></div>
+        <label class="cookie-toggle"><input type="checkbox" id="cookie-pref-marketing"><span class="cookie-toggle-track"></span></label>
+      </div>
+      <div class="cookie-banner-actions">
+        <button type="button" class="cookie-btn cookie-btn-outline" data-cookie-action="reject">Rifiuta tutti</button>
+        <button type="button" class="cookie-btn cookie-btn-solid" data-cookie-action="save">Salva preferenze</button>
+      </div>
+    </div>
+  </div>
+  <button type="button" id="cookie-reopen" class="cookie-reopen" aria-label="Apri le preferenze cookie" hidden>&#127760; Cookie</button>
+
+  <script>
+  (function () {
+    var STORAGE_KEY = 'cookie_consent_v1';
+    var banner = document.getElementById('cookie-banner');
+    var prefsPanel = document.getElementById('cookie-prefs');
+    var reopenBtn = document.getElementById('cookie-reopen');
+    var analyticsToggle = document.getElementById('cookie-pref-analytics');
+    var marketingToggle = document.getElementById('cookie-pref-marketing');
+
+    function readConsent() {
+      try {
+        var raw = localStorage.getItem(STORAGE_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch (e) { return null; }
+    }
+
+    function sendConsentToServer(consent) {
+      // TODO: quando il DB esterno sara' pronto, sostituire con la chiamata che registra
+      // il consenso (sito/dominio, timestamp, categorie accettate) nel registro dei consensi.
+      // Per ora il consenso resta salvato solo nel browser del visitatore.
+    }
+
+    function hideBanner() {
+      banner.hidden = true;
+      prefsPanel.hidden = true;
+      reopenBtn.hidden = false;
+    }
+
+    function showBanner(openPrefs) {
+      banner.hidden = false;
+      prefsPanel.hidden = !openPrefs;
+      reopenBtn.hidden = true;
+    }
+
+    function saveConsent(categories) {
+      var consent = {
+        necessari: true,
+        statistiche: !!categories.statistiche,
+        marketing: !!categories.marketing,
+        timestamp: new Date().toISOString(),
+      };
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(consent)); } catch (e) {}
+      sendConsentToServer(consent);
+      hideBanner();
+    }
+
+    banner.addEventListener('click', function (e) {
+      var action = e.target.getAttribute('data-cookie-action');
+      if (!action) return;
+      if (action === 'accept') {
+        saveConsent({ statistiche: true, marketing: true });
+      } else if (action === 'reject') {
+        saveConsent({ statistiche: false, marketing: false });
+      } else if (action === 'preferences') {
+        prefsPanel.hidden = false;
+      } else if (action === 'save') {
+        saveConsent({
+          statistiche: analyticsToggle && analyticsToggle.checked,
+          marketing: marketingToggle && marketingToggle.checked,
+        });
+      }
+    });
+
+    reopenBtn.addEventListener('click', function () {
+      var consent = readConsent();
+      if (consent) {
+        if (analyticsToggle) analyticsToggle.checked = !!consent.statistiche;
+        if (marketingToggle) marketingToggle.checked = !!consent.marketing;
+      }
+      showBanner(true);
+    });
+
+    if (!readConsent()) {
+      showBanner(false);
+    } else {
+      reopenBtn.hidden = false;
+    }
+  })();
+  </script>
+</body>
+</html>

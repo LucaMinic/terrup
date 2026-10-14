@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!-- Cliente: Terrup (slug terrup) — generato da templates/02-corporate -->
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>Contatti — Terrup</title>
+<meta name="description" content="Contatta Terrup: studio in Via delle Vie, 00031 Roma. Scrivi a alma.artartart@gmail.com o chiama il 2223344567 per fissare un primo incontro.">
+<link rel="canonical" href="https://www.terrup.it/contatti.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Terrup">
+<meta property="og:title" content="Contatti — Terrup">
+<meta property="og:description" content="Contatta Terrup: studio in Via delle Vie, 00031 Roma. Scrivi a alma.artartart@gmail.com o chiama il 2223344567 per fissare un primo incontro.">
+<meta property="og:url" content="https://www.terrup.it/contatti.html">
+<meta property="og:locale" content="it_IT">
+<meta property="og:image" content="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1200&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contatti — Terrup">
+<meta name="twitter:description" content="Contatta Terrup: studio in Via delle Vie, 00031 Roma. Scrivi a alma.artartart@gmail.com o chiama il 2223344567 per fissare un primo incontro.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "Terrup",
+  "url": "https://www.terrup.it/contatti.html",
+  "email": "alma.artartart@gmail.com",
+  "telephone": "+392223344567",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via delle Vie",
+    "postalCode": "00031",
+    "addressLocality": "Roma",
+    "addressCountry": "IT"
+  }
+}
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; }
+  .bg-primary { background-color: #0f766e; }
+  .text-primary { color: #0f766e; }
+  [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity .8s cubic-bezier(.22,.61,.36,1), transform .8s cubic-bezier(.22,.61,.36,1); }
+  [data-reveal].in-view { opacity: 1; transform: translateY(0); }
+  header { transition: box-shadow .3s ease; }
+  header.scrolled { box-shadow: 0 1px 0 rgba(15,23,42,.04), 0 12px 30px -18px rgba(15,23,42,.25); }
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(22px);} to { opacity: 1; transform: translateY(0);} }
+  .fade-in-up { opacity: 0; animation: fadeInUp .9s ease forwards; }
+  .delay-1 { animation-delay: .12s; }
+  .card-lift { transition: transform .25s ease, box-shadow .25s ease; }
+  .card-lift:hover { transform: translateY(-3px); box-shadow: 0 20px 40px -20px rgba(15,23,42,.25); }
+  .map-shadow { box-shadow: 0 40px 80px -25px rgba(15,23,42,.35); }
+  .hover\:text-primary:hover { color: #0f766e; }
+  .sede-card { cursor: pointer; }
+  .sede-card-active { box-shadow: inset 0 0 0 2px #0f766e; }
+</style>
+</head>
+<body class="bg-white text-neutral-800">
+
+  <header class="bg-white/90 backdrop-blur border-b border-neutral-200 sticky top-0 z-20">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center gap-2">
+        <div class="w-9 h-9 bg-primary rounded text-white flex items-center justify-center font-bold text-sm">T</div>
+        <span class="font-bold text-lg">Terrup</span>
+      </a>
+      <nav class="hidden md:flex gap-7 text-sm font-medium text-neutral-600">
+        <a href="index.html" class="hover:text-primary">Home</a>
+        <a href="studio.html" class="hover:text-primary">Lo studio</a>
+        <a href="professionisti.html" class="hover:text-primary">Professionisti</a>
+        <a href="servizi.html" class="hover:text-primary">Servizi</a>
+        <a href="contatti.html" class="text-primary font-semibold">Contatti</a>
+      </nav>
+      <a href="mailto:alma.artartart@gmail.com" class="hidden md:inline-block bg-primary text-white text-sm font-semibold rounded px-5 py-2.5 hover:opacity-90">Scrivici</a>
+      <button id="menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center text-neutral-800" aria-label="Apri menu" aria-expanded="false">
+        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="md:hidden hidden fixed inset-0 z-40 bg-white">
+    <div class="flex items-center justify-between px-6 py-5 border-b border-neutral-100">
+      <span class="text-lg font-semibold text-neutral-900">Menu</span>
+      <button id="menu-close" class="w-10 h-10 flex items-center justify-center text-neutral-800" aria-label="Chiudi menu">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"></line><line x1="19" y1="5" x2="5" y2="19"></line></svg>
+      </button>
+    </div>
+    <nav class="flex flex-col px-6 py-6 gap-1 text-lg">
+      <a href="index.html" class="py-3 border-b border-neutral-100 text-neutral-800 font-medium">Home</a>
+      <a href="studio.html" class="py-3 border-b border-neutral-100 text-neutral-800 font-medium">Lo studio</a>
+      <a href="professionisti.html" class="py-3 border-b border-neutral-100 text-neutral-800 font-medium">Professionisti</a>
+      <a href="servizi.html" class="py-3 border-b border-neutral-100 text-neutral-800 font-medium">Servizi</a>
+      <a href="contatti.html" class="py-3 text-neutral-800 font-medium">Contatti</a>
+    </nav>
+    <div class="px-6">
+      <a href="mailto:alma.artartart@gmail.com" class="block text-center bg-primary text-white rounded px-5 py-3 font-medium">Scrivici</a>
+    </div>
+  </div>
+
+  <section class="relative overflow-hidden bg-gradient-to-b from-teal-50/60 via-white to-white">
+    <div class="max-w-6xl mx-auto px-6 pt-16 pb-14 text-center">
+      <p class="fade-in-up text-primary font-semibold text-sm uppercase tracking-wide mb-3">Contatti</p>
+      <h1 class="fade-in-up delay-1 text-4xl md:text-5xl font-bold leading-tight max-w-2xl mx-auto mb-6">
+        Parliamo di cosa ti serve
+      </h1>
+      <p class="fade-in-up delay-1 text-neutral-600 max-w-xl mx-auto">Scrivici o chiamaci: ti rispondiamo in modo diretto e concreto.</p>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-6 pb-24 grid md:grid-cols-2 gap-12">
+    <div class="grid grid-cols-2 gap-4 content-start">
+      <div data-reveal class="card-lift border border-neutral-200 rounded-lg p-6 col-span-2 flex items-start gap-4 transition-colors duration-300 hover:bg-teal-50/40">
+        <div class="w-11 h-11 bg-primary/10 text-primary rounded-lg flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"></rect><polyline points="3,7 12,13 21,7"></polyline></svg>
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-wide text-neutral-400 mb-1">Email</p>
+          <a href="mailto:alma.artartart@gmail.com" class="font-semibold hover:text-primary transition">alma.artartart@gmail.com</a>
+        </div>
+      </div>
+      <div data-reveal class="card-lift border border-neutral-200 rounded-lg p-6 transition-colors duration-300 hover:bg-teal-50/40">
+        <p class="text-xs uppercase tracking-wide text-neutral-400 mb-1">PEC</p>
+        <p class="font-semibold text-sm">[da fornire]</p>
+      </div>
+      <div data-reveal class="card-lift border border-neutral-200 rounded-lg p-6 transition-colors duration-300 hover:bg-teal-50/40">
+        <p class="text-xs uppercase tracking-wide text-neutral-400 mb-1">Telefono</p>
+        <a href="tel:+392223344567" class="font-semibold hover:text-primary transition text-sm">2223344567</a>
+      </div>
+      <div data-reveal class="card-lift border border-neutral-200 rounded-lg p-6 col-span-2 transition-colors duration-300 hover:bg-teal-50/40">
+        <p class="text-xs uppercase tracking-wide text-neutral-400 mb-1">Sede</p>
+        <p class="font-semibold">Via delle Vie, 00031 Roma</p>
+      </div>
+      <div data-reveal class="card-lift border border-neutral-200 rounded-lg p-6 col-span-2 transition-colors duration-300 hover:bg-teal-50/40">
+        <p class="text-xs uppercase tracking-wide text-neutral-400 mb-1">Orari</p>
+        <p class="font-semibold">[da fornire]</p>
+      </div>
+    </div>
+    <div data-reveal class="map-shadow rounded-lg overflow-hidden border border-neutral-200 h-full min-h-[380px]">
+      <iframe
+        id="mappa-sede"
+        title="Mappa dello studio"
+        src="https://www.google.com/maps?q=Via+delle+Vie,+00031+Roma&output=embed"
+        class="w-full h-full min-h-[380px]" style="border:0" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer class="bg-neutral-900 text-neutral-400 text-sm">
+    <div class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="text-white font-bold text-lg mb-2">Terrup</div>
+        <p>Via delle Vie, 00031 Roma — P.IVA 12345678987</p>
+        <p>Iscritto all'Albo dottori in informatica magistrale</p>
+      </div>
+      <div>
+        <div class="text-white font-semibold mb-2">Contatti</div>
+        <p>alma.artartart@gmail.com</p>
+        <p>PEC: [da fornire]</p>
+        <p>2223344567</p>
+      </div>
+      <div>
+        <div class="text-white font-semibold mb-2">Menu</div>
+        <p><a href="studio.html" class="hover:text-white">Lo studio</a></p>
+        <p><a href="professionisti.html" class="hover:text-white">Professionisti</a></p>
+        <p><a href="servizi.html" class="hover:text-white">Servizi</a></p>
+      </div>
+      <div>
+        <div class="text-white font-semibold mb-2">Orari</div>
+        <p>[da fornire]</p>
+      </div>
+    </div>
+    <div class="border-t border-neutral-800 text-center py-4 text-xs">© 2026 Terrup. Tutti i diritti riservati. &middot; <a href="privacy-policy.html" class="hover:text-white">Privacy Policy</a> &middot; <a href="cookie-policy.html" class="hover:text-white">Cookie Policy</a></div>
+  </footer>
+
+  <script>
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 8));
+    const revealEls = document.querySelectorAll('[data-reveal]');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('in-view'); revealObs.unobserve(entry.target); }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach((el) => revealObs.observe(el));
+
+    const mappaSede = document.getElementById('mappa-sede');
+    document.querySelectorAll('[data-map-tab]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-map-tab]').forEach((b) => b.classList.remove('sede-card-active'));
+        btn.classList.add('sede-card-active');
+        if (mappaSede) mappaSede.src = 'https://www.google.com/maps?q=' + btn.getAttribute('data-query') + '&output=embed';
+      });
+    });
+
+    const menuBtn = document.getElementById('menu-btn');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const openMenu = () => { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; menuBtn.setAttribute('aria-expanded', 'true'); };
+      const closeMenu = () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; menuBtn.setAttribute('aria-expanded', 'false'); };
+      menuBtn.addEventListener('click', openMenu);
+      if (menuClose) menuClose.addEventListener('click', closeMenu);
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMenu));
+    }
+  </script>
+
+
+  <!-- Cookie banner: personalizza testo/categorie in base a privacy_cookie del brief cliente
+       (briefs/_schema.md). Google Analytics e gli strumenti di marketing/remarketing sono
+       componenti aggiuntivi venduti a parte, non raccolti nel brief: lascia le categorie
+       "Statistiche"/"Marketing" come placeholder generici, senza attivare script reali, oppure
+       semplifica il banner a un avviso informativo se il sito ha solo cookie tecnici + mappa
+       Google Maps. -->
+  <style>
+    .cookie-banner { position: fixed; left: 0; right: 0; bottom: 0; z-index: 999; background: #fff; border-top: 1px solid rgba(15,23,42,.08); box-shadow: 0 -10px 30px -14px rgba(15,23,42,.2); padding: 18px 20px; }
+    .cookie-banner[hidden] { display: none; }
+    .cookie-banner-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+    .cookie-banner-text { flex: 1 1 420px; font-size: .86rem; line-height: 1.55; color: #333; margin: 0; }
+    .cookie-banner-text a { color: #0f766e; text-decoration: underline; }
+    .cookie-banner-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cookie-btn { font-size: .84rem; font-weight: 600; padding: .6rem 1.15rem; border-radius: 6px; cursor: pointer; border: 1px solid transparent; transition: opacity .2s ease; }
+    .cookie-btn:hover { opacity: .85; }
+    .cookie-btn-solid { background: #0f766e; color: #fff; }
+    .cookie-btn-outline { background: #fff; color: #333; border-color: #d4d4d8; }
+    .cookie-btn-ghost { background: transparent; color: #0f766e; border-color: transparent; text-decoration: underline; padding-left: .2rem; padding-right: .2rem; }
+    .cookie-prefs { max-width: 1100px; margin: 14px auto 0; border-top: 1px solid rgba(15,23,42,.08); padding-top: 14px; }
+    .cookie-prefs[hidden] { display: none; }
+    .cookie-pref-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 0; }
+    .cookie-pref-row .cookie-pref-info { display: flex; flex-direction: column; gap: 2px; }
+    .cookie-pref-row strong { font-size: .86rem; color: #111; }
+    .cookie-pref-row span { font-size: .78rem; color: #666; }
+    .cookie-toggle { position: relative; display: inline-block; width: 42px; height: 24px; flex: 0 0 auto; }
+    .cookie-toggle input { opacity: 0; width: 0; height: 0; }
+    .cookie-toggle-track { position: absolute; inset: 0; background: #d4d4d8; border-radius: 999px; transition: background .2s ease; }
+    .cookie-toggle-track::before { content: ''; position: absolute; width: 18px; height: 18px; left: 3px; top: 3px; background: #fff; border-radius: 50%; transition: transform .2s ease; }
+    .cookie-toggle input:checked + .cookie-toggle-track { background: #0f766e; }
+    .cookie-toggle input:checked + .cookie-toggle-track::before { transform: translateX(18px); }
+    .cookie-toggle-disabled { opacity: .55; }
+    .cookie-reopen { position: fixed; left: 18px; bottom: 18px; z-index: 998; background: #fff; border: 1px solid rgba(15,23,42,.12); border-radius: 6px; padding: .55rem 1rem; font-size: .78rem; font-weight: 600; color: #333; box-shadow: 0 6px 18px -8px rgba(15,23,42,.25); cursor: pointer; }
+    .cookie-reopen[hidden] { display: none; }
+    @media (max-width: 640px) { .cookie-banner-actions { width: 100%; } .cookie-btn { flex: 1 1 auto; text-align: center; } }
+  </style>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Preferenze cookie" hidden>
+    <div class="cookie-banner-inner">
+      <p class="cookie-banner-text">
+        Usiamo cookie tecnici necessari al funzionamento del sito. Con il tuo consenso, usiamo anche cookie di analisi statistica e, se attivi, strumenti di marketing. Puoi cambiare idea in ogni momento dal pulsante &ldquo;Cookie&rdquo; in basso. <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="cookie-policy.html">Cookie Policy</a>
+      </p>
+      <div class="cookie-banner-actions">
+        <button type="button" class="cookie-btn cookie-btn-ghost" data-cookie-action="preferences">Personalizza</button>
+        <button type="button" class="cookie-btn cookie-btn-outline" data-cookie-action="reject">Rifiuta</button>
+        <button type="button" class="cookie-btn cookie-btn-solid" data-cookie-action="accept">Accetta tutti</button>
+      </div>
+    </div>
+    <div class="cookie-prefs" id="cookie-prefs" hidden>
+      <div class="cookie-pref-row">
+        <div class="cookie-pref-info"><strong>Necessari</strong><span>Indispensabili per il funzionamento del sito. Sempre attivi.</span></div>
+        <label class="cookie-toggle cookie-toggle-disabled"><input type="checkbox" checked disabled><span class="cookie-toggle-track"></span></label>
+      </div>
+      <div class="cookie-pref-row">
+        <div class="cookie-pref-info"><strong>Statistiche</strong><span>Ci aiutano a capire come viene usato il sito, in forma aggregata.</span></div>
+        <label class="cookie-toggle"><input type="checkbox" id="cookie-pref-analytics"><span class="cookie-toggle-track"></span></label>
+      </div>
+      <div class="cookie-pref-row">
+        <div class="cookie-pref-info"><strong>Marketing</strong><span>Usati per mostrare comunicazioni e contenuti pertinenti.</span></div>
+        <label class="cookie-toggle"><input type="checkbox" id="cookie-pref-marketing"><span class="cookie-toggle-track"></span></label>
+      </div>
+      <div class="cookie-banner-actions">
+        <button type="button" class="cookie-btn cookie-btn-outline" data-cookie-action="reject">Rifiuta tutti</button>
+        <button type="button" class="cookie-btn cookie-btn-solid" data-cookie-action="save">Salva preferenze</button>
+      </div>
+    </div>
+  </div>
+  <button type="button" id="cookie-reopen" class="cookie-reopen" aria-label="Apri le preferenze cookie" hidden>&#127760; Cookie</button>
+
+  <script>
+  (function () {
+    var STORAGE_KEY = 'cookie_consent_v1';
+    var banner = document.getElementById('cookie-banner');
+    var prefsPanel = document.getElementById('cookie-prefs');
+    var reopenBtn = document.getElementById('cookie-reopen');
+    var analyticsToggle = document.getElementById('cookie-pref-analytics');
+    var marketingToggle = document.getElementById('cookie-pref-marketing');
+
+    function readConsent() {
+      try {
+        var raw = localStorage.getItem(STORAGE_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch (e) { return null; }
+    }
+
+    function sendConsentToServer(consent) {
+      // TODO: quando il DB esterno sara' pronto, sostituire con la chiamata che registra
+      // il consenso (sito/dominio, timestamp, categorie accettate) nel registro dei consensi.
+      // Per ora il consenso resta salvato solo nel browser del visitatore.
+    }
+
+    function hideBanner() {
+      banner.hidden = true;
+      prefsPanel.hidden = true;
+      reopenBtn.hidden = false;
+    }
+
+    function showBanner(openPrefs) {
+      banner.hidden = false;
+      prefsPanel.hidden = !openPrefs;
+      reopenBtn.hidden = true;
+    }
+
+    function saveConsent(categories) {
+      var consent = {
+        necessari: true,
+        statistiche: !!categories.statistiche,
+        marketing: !!categories.marketing,
+        timestamp: new Date().toISOString(),
+      };
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(consent)); } catch (e) {}
+      sendConsentToServer(consent);
+      hideBanner();
+    }
+
+    banner.addEventListener('click', function (e) {
+      var action = e.target.getAttribute('data-cookie-action');
+      if (!action) return;
+      if (action === 'accept') {
+        saveConsent({ statistiche: true, marketing: true });
+      } else if (action === 'reject') {
+        saveConsent({ statistiche: false, marketing: false });
+      } else if (action === 'preferences') {
+        prefsPanel.hidden = false;
+      } else if (action === 'save') {
+        saveConsent({
+          statistiche: analyticsToggle && analyticsToggle.checked,
+          marketing: marketingToggle && marketingToggle.checked,
+        });
+      }
+    });
+
+    reopenBtn.addEventListener('click', function () {
+      var consent = readConsent();
+      if (consent) {
+        if (analyticsToggle) analyticsToggle.checked = !!consent.statistiche;
+        if (marketingToggle) marketingToggle.checked = !!consent.marketing;
+      }
+      showBanner(true);
+    });
+
+    if (!readConsent()) {
+      showBanner(false);
+    } else {
+      reopenBtn.hidden = false;
+    }
+  })();
+  </script>
+</body>
+</html>
